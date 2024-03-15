@@ -1,18 +1,14 @@
 public class CheckIt
 {
 
-   public static void checkIt (boolean a, boolean b, boolean c)
-   {  
-      if (a || (b && c))
-      {
-         System.out.println ("P is true");
-      }
-      else
-      {
-         System.out.println ("P isn't true");
+   public static String checkIt(boolean a, boolean b, boolean c) {
+      if (a || (b && c)) {
+         return "P is true";
+      } else {
+         return "P isn't true";
       }
    }
-   
+
    public static void main (String []argv)
    {  // Driver method for checkIt
       // Read an array from standard input, call checkIt()
